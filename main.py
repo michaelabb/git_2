@@ -1,18 +1,10 @@
-# This is a sample Python script.
+langs = ['Java','Python','JavaScript']
+amount = [14,3,6]
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+dict = {}
+combination = zip(langs,amount)
+for (k,v) in combination:
+    dict[k]=v
+print(dict)
 
-def double(x):
-    return (x*2)
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('michael')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print({k:v for (k,v) in zip(langs,amount)})
